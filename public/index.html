@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA para Programadores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 h-screen flex flex-col">
+    <header class="p-4 bg-slate-800 border-b border-slate-700 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-blue-400 flex items-center gap-2">
+            <span class="text-2xl">🚀</span> IA para Programadores
+        </h1>
+        <button onclick="window.location.reload()" class="text-xs text-blue-400 hover:text-blue-300 transition-colors">🔄
+            Reiniciar chat
+        </button>
+    </header>
+
+    <main id="chat-container" class="flex-1 overflow-y-auto p-4 md:p-8 space-y-6">
+        <div class="flex justify-start">
+            <div class="bg-slate-800 border border-slate-700 p-4 rounded-2x1 mas-w-[85%] shadow-sm">
+                <p>Olá, sou o IA para Programadores! Como posso ajudar você hoje?</p>
+            </div>
+        </div>
+    </main>
+    <footer class="p-4 bg-slate-800 border-t border-slate-700">
+        <div class="max-w-4x1 mx-auto flex gap-3 relative">
+            <input types="text" id="userinput" class="w-full bg-slate-900-border border-slate-500 rounded-xl p-4 focus:border-blue-500 transition-all placeholder-slate-500"
+            placeholder="Digite sua dúvida de programação...">
+
+            <button onclick="sendmessage()" id="send8tn" class="bg-blue-600 hover:bg-blue-500 text-white px-6 rounded-lg font-bold
+            transition-all flex items-center justify-center">
+                Enviar
+            </button>
+
+        </div>
+    </footer>
+    <script src="script.js">
+        
+    </script>
+
+
+</body>
+</html>
